@@ -125,8 +125,6 @@
         `(cursor ((t (:background ,uranus-600))))
         `(fixed-pitch ((t (:family "Monospace"))))
         `(variable-pitch ((((type w32)) (:foundry "outline" :family "Arial")) (t (:family "Sans Serif"))))
-        `(escape-glyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
-        `(homoglyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
         `(minibuffer-prompt ((t (:foreground ,uranus-600))))
         `(highlight ((t (:background ,earth-300 :foreground ,uranus-800))))
         `(region ((t (:background ,sun-200))))
@@ -142,7 +140,6 @@
         `(font-lock-doc-face                   ((t (:foreground  ,earth-600 :inherit font-lock-comment-face))))
         `(font-lock-function-name-face         ((t (:foreground  ,uranus-500))))
         `(font-lock-keyword-face               ((t (:foreground  ,mars-600))))
-        `(font-lock-negation-char-face         ((t nil)))
         `(font-lock-preprocessor-face          ((t (:inherit     (font-lock-builtin-face)))))
         `(font-lock-regexp-grouping-backslash  ((t (:foreground  ,sun-600   :inherit bold))))
         `(font-lock-regexp-grouping-construct  ((t (:foreground  ,sun-600   :inherit bold))))
@@ -234,8 +231,17 @@
         ;; Eshell/terminal faces
         `(eshell-ls-directory ((t  (:foreground  ,venus-500 :bold t))))
 
-        ;; Telephone-line Evil faces
-        ;; `(telephone-line-evil-emacs ((t (:foreground ,venus-600 :inherit telephone-line-evil))))
+        ;; Mode line
+        `(mode-line ((t (:background ,space-300 :box nil))))
+        `(mode-line-buffer-id ((t (:weight bold))))
+        `(mode-line-emphasis ((t (:foreground ,uranus-400))))
+        `(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color "grey40" :style released-button))) (t (:inherit (highlight)))))
+        `(mode-line-inactive ((t (:background ,space-300 :foreground ,space-600 :box nil))))
+
+        ;; Isearch
+        `(isearch ((t (:background ,venus-600 :foreground ,uranus-300 ))))
+        `(isearch-fail ((t (:background ,mars-400 :foreground ,space-300 :weight bold))))
+        `(query-replace ((t (:inherit (isearch)))))))
 
         ;; Extra stuff
         `(button ((t (:inherit (link)))))
@@ -244,17 +250,9 @@
         `(fringe ((((class color) (background light)) (:background "grey95")) (((class color) (background dark)) (:background "grey10")) (t (:background "gray"))))
         `(header-line ((default (:inherit (mode-line))) (((type tty)) (:underline (:color foreground-color :style line) :inverse-video nil)) (((class color grayscale) (background light)) (:box nil :foreground "grey20" :background "grey90")) (((class color grayscale) (background dark)) (:box nil :foreground "grey90" :background "grey20")) (((class mono) (background light)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "black" :background "white")) (((class mono) (background dark)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "white" :background "black"))))
         `(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
-        `(mode-line ((t (:background ,space-300 :box nil))))
-        `(mode-line-buffer-id ((t (:weight bold))))
-        `(mode-line-emphasis ((t (:foreground ,uranus-400))))
-        `(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color "grey40" :style released-button))) (t (:inherit (highlight)))))
-        `(mode-line-inactive ((t (:background ,space-300 :foreground ,space-600 :box nil))))
-        `(isearch ((((class color) (min-colors 88) (background light)) (:foreground "lightskyblue1" :background "magenta3")) (((class color) (min-colors 88) (background dark)) (:foreground "brown4" :background "palevioletred2")) (((class color) (min-colors 16)) (:foreground "cyan1" :background "magenta4")) (((class color) (min-colors 8)) (:foreground "cyan1" :background "magenta4")) (t (:inverse-video t))))
-        `(isearch-fail ((t (:background ,mars-400 :foreground "#FFFBF0" :weight bold))))
         `(lazy-highlight ((((class color) (min-colors 88) (background light)) (:background "paleturquoise")) (((class color) (min-colors 88) (background dark)) (:background "paleturquoise4")) (((class color) (min-colors 16)) (:background "turquoise3")) (((class color) (min-colors 8)) (:background "turquoise3")) (t (:underline (:color foreground-color :style line)))))
         `(match ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
         `(next-error ((t (:inherit (region)))))
-        `(query-replace ((t (:inherit (isearch)))))))
 
 (provide-theme `cosmos)
 
