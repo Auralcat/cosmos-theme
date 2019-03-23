@@ -1,5 +1,49 @@
+;;; cosmos-theme.el --- An Emacs 24+ theme inspired by the Astro design system. -*- lexical-binding: t; -*-
+;;
+;; Copyright (C) 2019 Miriam Retka
+;;
+;; Author: Miriam Retka <http://github.com/auralcat>
+;; Maintainer: Miriam Retka <miriamretka@tutanota.com>
+;; Created: January 27, 2019
+;; Modified: March 22, 2019
+;; Version: 1.0
+;; Keywords: light theme faces
+;; Homepage: https://github.com/auralcat/cosmos-theme
+;; Package-Requires: ((emacs "24.4"))
+;;
+;; This file is NOT part of GNU Emacs.
+;;
+;;; Commentary:
+;;
+;; This is an Emacs 24+ theme inspired by Magnetis' Astro design system. The
+;; idea came out of a necessity for a pleasant light theme with org-agenda
+;; customizations and overall matching light colors and readable fonts.
+;;
+;; # Installation
+;;
+;; ## Manual
+;; Download `cosmos-theme.el` to the directory `~/.emacs.d/themes/`.
+;; Add this to your `.emacs` (or `init.el`):
+;;
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;;
+;; Now you can load the theme with the interactive function `load-theme` like this:
+;;
+;; `M-x load-theme RET cosmos`
+;;
+;; Alternatively, you can run `M-x customize-themes` and choose `cosmos` from
+;; the list of themes that appear there.
+;;
+;; ## Extra fonts
+;; You will need to install the Lato, Poppins and Roboto fonts in your system
+;; for the theme to work properly.
+;;
+;; # Configuration
+;; To load this theme automatically on Emacs startup, add this to your `init.el`:
+;;     (load-theme 'cosmos t)
+;;; Code:
 (deftheme cosmos
-    "Inspired by the Astro design system. - Created 2019-01-27.")
+    "Inspired by the Astro design system")
 
 (let (
          (earth-100   "#b8fcac")
@@ -213,3 +257,7 @@
         `(query-replace ((t (:inherit (isearch)))))))
 
 (provide-theme `cosmos)
+
+(provide 'cosmos-theme)
+
+;;; cosmos-theme.el ends here
