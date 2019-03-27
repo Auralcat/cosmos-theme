@@ -183,6 +183,14 @@
         `(org-table    ((t  (:foreground ,uranus-600))))
         `(org-tag    ((t  (:foreground ,uranus-600))))
 
+        ;; Ace-window
+        `(aw-background-face    ((t (:foreground  ,moon-300))))
+        `(aw-leading-char-face  ((t (:foreground  ,mars-500))))
+
+        ;; Ace-jump
+        `(ace-jump-face-background ((t (:inherit aw-background-face))))
+        `(ace-jump-face-foreground ((t (:inherit aw-leading-char-face))))
+
         ;; Todo faces
         `(org-todo ((t (:box t :bold t :background ,mars-100 :foreground ,mars-500 :family "Poppins" :height 160))))
         `(org-done ((t (:background ,earth-100 :foreground ,earth-500 :inherit org-todo))))
