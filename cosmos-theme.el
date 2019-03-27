@@ -155,6 +155,7 @@
         ;; Linum-mode
         `(line-number ((t (:inherit shadow))))
         `(line-number-current-line ((t (:foreground ,moon-600 :background "#b8fcac":inherit line-number))))
+        `(linum ((t (:inherit line-number))))
 
         ;; Rainbow delimiters
         `(rainbow-delimiters-base-face        ((t  (:foreground  ,venus-700))))
