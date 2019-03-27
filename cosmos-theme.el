@@ -183,6 +183,10 @@
         `(org-table    ((t  (:foreground ,uranus-600))))
         `(org-tag    ((t  (:foreground ,uranus-600))))
 
+        ;; Org-pomodoro
+        `(org-pomodoro-mode-line ((t (:foreground ,venus-500))))
+        `(org-pomodoro-mode-line-break ((t (:foreground ,earth-500))))
+
         ;; Ace-window
         `(aw-background-face    ((t (:foreground  ,moon-300))))
         `(aw-leading-char-face  ((t (:foreground  ,mars-500))))
