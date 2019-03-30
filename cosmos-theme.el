@@ -120,24 +120,22 @@
   (custom-theme-set-faces
    `cosmos
 
-   ;; Default face.
+   ;; General faces
    `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Roboto Mono"))))
    `(cursor ((t (:background ,uranus-600))))
    `(fixed-pitch ((t (:family "Monospace"))))
    `(variable-pitch ((((type w32)) (:foundry "outline" :family "Arial")) (t (:family "Sans Serif"))))
    `(minibuffer-prompt ((t (:foreground ,uranus-600))))
-   `(highlight ((t (:background ,earth-300 :foreground ,uranus-800))))
-   `(region ((t (:background ,sun-200))))
-   `(shadow ((t (:foreground ,space-500))))
    `(secondary-selection ((t (:background ,earth-100))))
    `(trailing-whitespace ((t (:background ,mars-600))))
-
-   ;; General faces
    `(success ((t (:foreground ,earth-500))))
    `(error ((t (:foreground ,mars-500))))
    `(warning ((t (:foreground ,sun-700))))
-   `(link ((t (:foreground ,uranus-500))))
-   `(link-visited ((t (:foreground ,venus-500))))
+   `(link ((t (:foreground ,uranus-500 :underline t))))
+   `(link-visited ((t (:foreground ,venus-500 :underline t :slant italic))))
+   `(region ((t (:background ,sun-200))))
+   `(shadow ((t (:foreground ,space-500))))
+   `(highlight ((t (:background ,earth-300 :foreground ,uranus-800))))
 
    ;; Font-lock mode
    `(font-lock-builtin-face               ((t (:foreground  ,venus-500 :slant italic))))
