@@ -153,6 +153,16 @@
    `(font-lock-variable-name-face         ((t (:foreground  ,mars-500  :slant italic))))
    `(font-lock-warning-face               ((t (:foreground  ,mars-600))))
 
+   ;; Term colors
+   `(term-color-black    ((t  (:foreground  ,space-1000  :background  ,space-1000))))
+   `(term-color-blue     ((t  (:foreground  ,uranus-700  :background  ,uranus-700))))
+   `(term-color-cyan     ((t  (:foreground  ,uranus-200  :background  ,uranus-200))))
+   `(term-color-green    ((t  (:foreground  ,earth-500   :background  ,earth-500))))
+   `(term-color-magenta  ((t  (:foreground  ,venus-200   :background  ,venus-200))))
+   `(term-color-red      ((t  (:foreground  ,mars-500    :background  ,mars-500))))
+   `(term-color-white    ((t  (:foreground  ,space-200   :background  ,space-200))))
+   `(term-color-yellow   ((t  (:foreground  ,sun-700     :background  ,sun-700))))
+
    ;; Searching
    `(isearch                              ((t (:foreground  ,uranus-600 :background ,venus-300))))
    `(isearch-fail                         ((t (:foreground  ,space-600 :background ,mars-300))))
@@ -261,26 +271,26 @@
    `(isearch-fail ((t (:background ,mars-400 :foreground ,space-300 :weight bold))))
    `(query-replace ((t (:inherit (isearch))))))
 
-   ;; Compilation-mode
-   `(compilation-line-number     ((t (:inherit     font-lock-keyword-face))))
-   `(compilation-column-number   ((t (:inherit     font-lock-doc-face))))
-   `(compilation-error           ((t (:inherit     error))))
-   `(compilation-info            ((t (:foreground  ,uranus-500))))
-   `(compilation-mode-line-exit  ((t (:foreground  ,uranus-500))))
-   `(compilation-mode-line-fail  ((t (:inherit     error))))
-   `(compilation-mode-line-run   ((t (:foreground  ,uranus-500))))
-   `(compilation-warning         ((t (:inherit     warning))))
+  ;; Compilation-mode
+  `(compilation-line-number     ((t (:inherit     font-lock-keyword-face))))
+  `(compilation-column-number   ((t (:inherit     font-lock-doc-face))))
+  `(compilation-error           ((t (:inherit     error))))
+  `(compilation-info            ((t (:foreground  ,uranus-500))))
+  `(compilation-mode-line-exit  ((t (:foreground  ,uranus-500))))
+  `(compilation-mode-line-fail  ((t (:inherit     error))))
+  `(compilation-mode-line-run   ((t (:foreground  ,uranus-500))))
+  `(compilation-warning         ((t (:inherit     warning))))
 
-;; Extra stuff
-`(button ((t (:inherit (link)))))
-`(link ((((class color) (min-colors 88) (background light)) (:underline (:color foreground-color :style line) :foreground ,uranus-700)) (((class color) (background light)) (:underline (:color foreground-color :style line) :foreground "blue")) (((class color) (min-colors 88) (background dark)) (:underline (:color foreground-color :style line) :foreground "cyan1")) (((class color) (background dark)) (:underline (:color foreground-color :style line) :foreground "cyan")) (t (:inherit (underline)))))
-`(link-visited ((default (:inherit (link))) (((class color) (background light)) (:foreground ,uranus-800)) (((class color) (background dark)) (:foreground "violet"))))
-`(fringe ((((class color) (background light)) (:background "grey95")) (((class color) (background dark)) (:background "grey10")) (t (:background "gray"))))
-`(header-line ((default (:inherit (mode-line))) (((type tty)) (:underline (:color foreground-color :style line) :inverse-video nil)) (((class color grayscale) (background light)) (:box nil :foreground "grey20" :background "grey90")) (((class color grayscale) (background dark)) (:box nil :foreground "grey90" :background "grey20")) (((class mono) (background light)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "black" :background "white")) (((class mono) (background dark)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "white" :background "black"))))
-`(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
-`(lazy-highlight ((((class color) (min-colors 88) (background light)) (:background "paleturquoise")) (((class color) (min-colors 88) (background dark)) (:background "paleturquoise4")) (((class color) (min-colors 16)) (:background "turquoise3")) (((class color) (min-colors 8)) (:background "turquoise3")) (t (:underline (:color foreground-color :style line)))))
-`(match ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
-`(next-error ((t (:inherit (region))))))
+  ;; Extra stuff
+  `(button ((t (:inherit (link)))))
+  `(link ((((class color) (min-colors 88) (background light)) (:underline (:color foreground-color :style line) :foreground ,uranus-700)) (((class color) (background light)) (:underline (:color foreground-color :style line) :foreground "blue")) (((class color) (min-colors 88) (background dark)) (:underline (:color foreground-color :style line) :foreground "cyan1")) (((class color) (background dark)) (:underline (:color foreground-color :style line) :foreground "cyan")) (t (:inherit (underline)))))
+  `(link-visited ((default (:inherit (link))) (((class color) (background light)) (:foreground ,uranus-800)) (((class color) (background dark)) (:foreground "violet"))))
+  `(fringe ((((class color) (background light)) (:background "grey95")) (((class color) (background dark)) (:background "grey10")) (t (:background "gray"))))
+  `(header-line ((default (:inherit (mode-line))) (((type tty)) (:underline (:color foreground-color :style line) :inverse-video nil)) (((class color grayscale) (background light)) (:box nil :foreground "grey20" :background "grey90")) (((class color grayscale) (background dark)) (:box nil :foreground "grey90" :background "grey20")) (((class mono) (background light)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "black" :background "white")) (((class mono) (background dark)) (:underline (:color foreground-color :style line) :box nil :inverse-video nil :foreground "white" :background "black"))))
+  `(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
+  `(lazy-highlight ((((class color) (min-colors 88) (background light)) (:background "paleturquoise")) (((class color) (min-colors 88) (background dark)) (:background "paleturquoise4")) (((class color) (min-colors 16)) (:background "turquoise3")) (((class color) (min-colors 8)) (:background "turquoise3")) (t (:underline (:color foreground-color :style line)))))
+  `(match ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
+  `(next-error ((t (:inherit (region))))))
 
 (provide-theme `cosmos)
 
