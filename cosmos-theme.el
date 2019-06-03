@@ -124,7 +124,7 @@
    `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Roboto Mono"))))
    `(cursor ((t (:background ,uranus-600))))
    `(fixed-pitch ((t (:family "Monospace"))))
-   `(variable-pitch ((((type w32)) (:foundry "outline" :family "Arial")) (t (:family "Sans Serif"))))
+   `(variable-pitch ((t  (:family "Lato" :height 160 :font-weight 400 :inherit default))))
    `(minibuffer-prompt ((t (:foreground ,uranus-600))))
    `(secondary-selection ((t (:background ,earth-100))))
    `(trailing-whitespace ((t (:background ,mars-600))))
@@ -161,7 +161,7 @@
    `(term-color-magenta  ((t  (:foreground  ,venus-200   :background  ,venus-200))))
    `(term-color-red      ((t  (:foreground  ,mars-500    :background  ,mars-500))))
    `(term-color-white    ((t  (:foreground  ,space-200   :background  ,space-200))))
-   `(term-color-yellow   ((t  (:foreground  ,sun-700     :background  ,sun-700))))
+   `(term-color-yellow   ((t  (:foreground  ,sun-300     :background  ,sun-300))))
 
    ;; Searching
    `(isearch                              ((t (:foreground  ,uranus-600 :background ,venus-300))))
@@ -187,7 +187,7 @@
    `(highlight-numbers-number ((t (:foreground ,earth-500))))
 
    ;; Org-mode faces
-   `(org-level-1  ((t  (:foreground ,uranus-500 :family  "Poppins" :height  220))))
+   `(org-level-1  ((t  (:foreground ,uranus-500 :family  "Poppins" :font-weight 600 :height  220))))
    `(org-level-2  ((t  (:foreground ,venus-500  :inherit org-level-1   :height  200))))
    `(org-level-3  ((t  (:foreground ,earth-600  :inherit org-level-1   :height  180))))
    `(org-level-4  ((t  (:foreground ,mars-500   :inherit org-level-1   :height  160))))
@@ -211,14 +211,14 @@
    `(ace-jump-face-foreground ((t (:inherit aw-leading-char-face))))
 
    ;; Todo faces
-   `(org-todo ((t (:box t :bold t :background ,mars-100 :foreground ,mars-500 :family "Poppins" :height 160))))
+   `(org-todo ((t (:box t :bold t :background ,mars-100 :foreground ,mars-500 :family "Poppins" :font-weight 600  :height 160))))
    `(org-done ((t (:background ,earth-100 :foreground ,earth-500 :inherit org-todo))))
 
    ;; Agenda faces
    `(org-agenda-calendar-event  ((t  (:bold t :foreground ,uranus-500))))
    `(org-agenda-calendar-sexp   ((t  (:bold t :foreground ,sun-700))))
    `(org-agenda-structure       ((t  (:foreground ,uranus-600))))
-   `(org-agenda-date            ((t  (:bold t :foreground ,uranus-600 :family "Poppins" :height 180))))
+   `(org-agenda-date            ((t  (:bold t :foreground ,uranus-600 :family "Poppins" :font-weight 600 :height 180))))
    `(org-agenda-date-today      ((t  (:foreground  ,venus-400      :inherit     org-agenda-date))))
    `(org-agenda-date-weekend    ((t  (:foreground  ,earth-500      :inherit     org-agenda-date))))
    `(org-scheduled-previously   ((t  (:foreground  ,mars-800))))
@@ -250,7 +250,7 @@
    ;; Slack client faces
    `(slack-preview-face    ((t  (:background ,sun-100 :inherit org-code))))
    `(slack-message-output-text    ((t  (:family "Lato" :height 140 :inherit default))))
-   `(slack-message-output-header    ((t  (:family "Poppins" :height 160 :bold t :underline t :foreground ,mars-500))))
+   `(slack-message-output-header    ((t  (:family "Poppins" :height 160 :font-weight 600 :bold t :underline t :foreground ,mars-500))))
 
    ;; Helm faces
    `(helm-locate-finish ((t  (:foreground  ,earth-600))))
@@ -280,6 +280,11 @@
   `(compilation-mode-line-fail  ((t (:inherit     error))))
   `(compilation-mode-line-run   ((t (:foreground  ,uranus-500))))
   `(compilation-warning         ((t (:inherit     warning))))
+
+  ;; Git gutter
+  `(git-gutter:added     ((t  (:background  ,earth-500 :inherit default))))
+  `(git-gutter:deleted   ((t  (:background  ,mars-500  :inherit default))))
+  `(git-gutter:modified  ((t  (:background  ,venus-500 :inherit default))))
 
   ;; Extra stuff
   `(button ((t (:inherit (link)))))
