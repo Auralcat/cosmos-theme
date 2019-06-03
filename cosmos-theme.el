@@ -186,17 +186,29 @@
    ;; Highlight-numbers-mode
    `(highlight-numbers-number ((t (:foreground ,earth-500))))
 
+   ;; Outline faces
+   `(outline-1  ((t  (:foreground ,uranus-500 :family  "Poppins" :font-weight 600 :height  220))))
+   `(outline-2  ((t  (:foreground ,venus-500  :inherit org-level-1   :height  200))))
+   `(outline-3  ((t  (:foreground ,earth-600  :inherit org-level-1   :height  180))))
+   `(outline-4  ((t  (:foreground ,mars-500   :inherit org-level-1   :height  160))))
+
    ;; Org-mode faces
-   `(org-level-1  ((t  (:foreground ,uranus-500 :family  "Poppins" :font-weight 600 :height  220))))
-   `(org-level-2  ((t  (:foreground ,venus-500  :inherit org-level-1   :height  200))))
-   `(org-level-3  ((t  (:foreground ,earth-600  :inherit org-level-1   :height  180))))
-   `(org-level-4  ((t  (:foreground ,mars-500   :inherit org-level-1   :height  160))))
+   `(org-level-1  ((t  (:inherit outline-1))))
+   `(org-level-2  ((t  (:inherit outline-2))))
+   `(org-level-3  ((t  (:inherit outline-3))))
+   `(org-level-4  ((t  (:inherit outline-4))))
    `(org-document-info-keyword    ((t  (:foreground ,moon-400))))
    `(org-block    ((t  (:foreground ,moon-700))))
    `(org-code     ((t  (:foreground ,sun-600))))
    `(org-date     ((t  (:underline  t           :foreground  ,venus-700))))
    `(org-table    ((t  (:foreground ,uranus-600))))
    `(org-tag    ((t  (:foreground ,uranus-600))))
+
+   ;; Markdown faces
+   `(markdown-header-face-1  ((t  (:inherit outline-1))))
+   `(markdown-header-face-2  ((t  (:inherit outline-2))))
+   `(markdown-header-face-3  ((t  (:inherit outline-3))))
+   `(markdown-header-face-4  ((t  (:inherit outline-4))))
 
    ;; Org-pomodoro
    `(org-pomodoro-mode-line ((t (:foreground ,venus-500))))
