@@ -5,7 +5,7 @@
 ;; Author: Miriam Retka <http://github.com/auralcat>
 ;; Maintainer: Miriam Retka <miriamretka@tutanota.com>
 ;; Created: January 27, 2019
-;; Modified: March 22, 2019
+;; Modified: June 13, 2019
 ;; Version: 1.0
 ;; Keywords: light theme faces
 ;; Homepage: https://github.com/auralcat/cosmos-theme
@@ -123,7 +123,7 @@
    ;; General faces
    `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Roboto Mono"))))
    `(cursor ((t (:background ,uranus-600))))
-   `(fixed-pitch ((t (:family "Monospace"))))
+   `(fixed-pitch ((t (:family "Roboto Mono" :height 140))))
    `(variable-pitch ((t  (:family "Lato" :height 160 :font-weight 400 :inherit default))))
    `(minibuffer-prompt ((t (:foreground ,uranus-600))))
    `(secondary-selection ((t (:background ,earth-100))))
@@ -200,8 +200,12 @@
    `(org-document-info-keyword    ((t  (:foreground ,moon-400))))
    `(org-block    ((t  (:foreground ,moon-700))))
    `(org-code     ((t  (:foreground ,sun-600))))
-   `(org-date     ((t  (:underline  t           :foreground  ,venus-700))))
-   `(org-table    ((t  (:foreground ,uranus-600))))
+   `(org-block     ((nil  (:inherit fixed-pitch :height 120))))
+   `(org-block-begin-line     ((t  (:foreground ,moon-400 :inherit org-block :italic t))))
+   `(org-block-end-line     ((t  (:inherit org-block-begin-line))))
+   `(org-date     ((t  (:underline t :foreground ,venus-700 :inherit fixed-pitch))))
+   `(org-table    ((t  (:foreground ,uranus-600 :inherit fixed-pitch))))
+   `(org-src    ((t  (:inherit fixed-pitch))))
    `(org-tag    ((t  (:foreground ,uranus-600))))
 
    ;; Markdown faces
