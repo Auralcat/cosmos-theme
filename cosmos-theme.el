@@ -121,7 +121,7 @@
    `cosmos
 
    ;; General faces
-   `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Roboto Mono"))))
+   `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :font-weight 400 :height 120 :width normal :foundry "nil" :family "Roboto Mono"))))
    `(cursor ((t (:background ,uranus-600))))
    `(fixed-pitch ((t (:family "Roboto Mono" :height 140))))
    `(variable-pitch ((t  (:family "Lato" :height 160 :font-weight 400 :inherit default))))
@@ -213,6 +213,7 @@
    `(markdown-header-face-2  ((t  (:inherit outline-2))))
    `(markdown-header-face-3  ((t  (:inherit outline-3))))
    `(markdown-header-face-4  ((t  (:inherit outline-4))))
+   `(markdown-code-face  ((t  (:inherit org-code))))
 
    ;; Org-pomodoro
    `(org-pomodoro-mode-line ((t (:foreground ,venus-500))))
