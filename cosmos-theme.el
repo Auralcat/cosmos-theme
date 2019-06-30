@@ -5,7 +5,7 @@
 ;; Author: Miriam Retka <http://github.com/auralcat>
 ;; Maintainer: Miriam Retka <miriamretka@tutanota.com>
 ;; Created: January 27, 2019
-;; Modified: June 13, 2019
+;; Modified: June 30, 2019
 ;; Version: 1.0
 ;; Keywords: light theme faces
 ;; Homepage: https://github.com/auralcat/cosmos-theme
@@ -131,7 +131,7 @@
    `(success ((t (:foreground ,earth-500))))
    `(error ((t (:foreground ,mars-500))))
    `(warning ((t (:foreground ,sun-700))))
-   `(link ((t (:foreground ,uranus-500 :underline t))))
+   `(link ((t (:foreground ,uranus-700 :underline t))))
    `(link-visited ((t (:foreground ,venus-500 :underline t :slant italic))))
    `(region ((t (:background ,sun-200))))
    `(shadow ((t (:foreground ,space-500))))
@@ -187,10 +187,10 @@
    `(highlight-numbers-number ((t (:foreground ,earth-500))))
 
    ;; Outline faces
-   `(outline-1  ((t  (:foreground ,uranus-500 :family  "Poppins" :font-weight 600 :height  220))))
-   `(outline-2  ((t  (:foreground ,venus-500  :inherit org-level-1   :height  200))))
-   `(outline-3  ((t  (:foreground ,earth-600  :inherit org-level-1   :height  180))))
-   `(outline-4  ((t  (:foreground ,mars-500   :inherit org-level-1   :height  160))))
+   `(outline-1  ((t  (:foreground ,venus-400 :family  "Poppins" :font-weight 600 :height  220))))
+   `(outline-2  ((t  (:foreground ,uranus-500  :inherit org-level-1   :height  200))))
+   `(outline-3  ((t  (:foreground ,moon-900  :inherit org-level-1   :height  180))))
+   `(outline-4  ((t  (:foreground ,earth-500   :inherit org-level-1   :height  160))))
 
    ;; Org-mode faces
    `(org-level-1  ((t  (:inherit outline-1))))
