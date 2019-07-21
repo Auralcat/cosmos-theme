@@ -124,7 +124,7 @@
    `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :height 120 :width normal :foundry "nil"))))
    `(cursor ((t (:background ,uranus-600))))
    `(fixed-pitch ((t (:family "Roboto Mono" :height 140))))
-   `(variable-pitch ((t  (:family "Lato" :height 160 :font-weight 400 :inherit default))))
+   `(variable-pitch ((t  (:family "Lato" :height 200 :weight light))))
    `(minibuffer-prompt ((t (:foreground ,uranus-600))))
    `(secondary-selection ((t (:background ,earth-100))))
    `(trailing-whitespace ((t (:background ,mars-600))))
