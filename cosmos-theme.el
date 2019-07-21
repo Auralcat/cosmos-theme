@@ -121,7 +121,7 @@
    `cosmos
 
    ;; General faces
-   `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :font-weight 400 :height 120 :width normal :foundry "nil" :family "Roboto Mono"))))
+   `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :height 120 :width normal :foundry "nil"))))
    `(cursor ((t (:background ,uranus-600))))
    `(fixed-pitch ((t (:family "Roboto Mono" :height 140))))
    `(variable-pitch ((t  (:family "Lato" :height 160 :font-weight 400 :inherit default))))
