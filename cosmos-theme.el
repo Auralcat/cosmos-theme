@@ -5,8 +5,7 @@
 ;; Author: Miriam Retka <http://github.com/auralcat>
 ;; Maintainer: Miriam Retka <miriamretka@tutanota.com>
 ;; Created: January 27, 2019
-;; Modified: June 30, 2019
-;; Version: 1.0
+;; Version: 1.6
 ;; Keywords: light theme faces
 ;; Homepage: https://github.com/auralcat/cosmos-theme
 ;; Package-Requires: ((emacs "24.4"))
