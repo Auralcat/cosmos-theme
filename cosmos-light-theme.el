@@ -1,11 +1,11 @@
-;;; cosmos-theme.el --- An Emacs 24+ theme inspired by the Astro design system. -*- lexical-binding: t; -*-
+;;; cosmos-light-theme.el --- Light version of the Cosmos theme for Emacs. -*- lexical-binding: t; -*-
 ;;
 ;; Copyright (C) 2019 Miriam Retka
 ;;
 ;; Author: Miriam Retka <http://github.com/auralcat>
 ;; Maintainer: Miriam Retka <miriamretka@tutanota.com>
 ;; Created: January 27, 2019
-;; Version: 1.6
+;; Version: 2.0
 ;; Keywords: light theme faces
 ;; Homepage: https://github.com/auralcat/cosmos-theme
 ;; Package-Requires: ((emacs "24.4"))
@@ -28,7 +28,7 @@
 ;;
 ;; Now you can load the theme with the interactive function `load-theme` like this:
 ;;
-;; `M-x load-theme RET cosmos`
+;; `M-x load-theme RET cosmos-light`
 ;;
 ;; Alternatively, you can run `M-x customize-themes` and choose `cosmos` from
 ;; the list of themes that appear there.
@@ -41,7 +41,7 @@
 ;; To load this theme automatically on Emacs startup, add this to your `init.el`:
 ;;     (load-theme 'cosmos t)
 ;;; Code:
-(deftheme cosmos
+(deftheme cosmos-light
   "Inspired by the Astro design system")
 
 (let (
@@ -117,7 +117,7 @@
       )
 
   (custom-theme-set-faces
-   `cosmos
+   `cosmos-light
 
    ;; General faces
    `(default ((t (:inherit nil :stipple nil :background ,moon-200 :foreground ,moon-900 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :height 120 :width normal :foundry "nil"))))
@@ -314,8 +314,5 @@
   `(match ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
   `(next-error ((t (:inherit (region))))))
 
-(provide-theme `cosmos)
-
-(provide 'cosmos-theme)
-
+(provide-theme `cosmos-light)
 ;;; cosmos-theme.el ends here
