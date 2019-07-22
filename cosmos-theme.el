@@ -251,6 +251,7 @@
    ;; Js2-mode
    `(js2-function-call               ((t  (:foreground  ,uranus-700))))
    `(js2-function-param              ((t  (:foreground  ,earth-700))))
+   `(js2-external-variable           ((t  (:foreground  ,earth-500))))
 
    ;; Web-mode
    `(web-mode-html-tag-face         ((t  (:foreground  ,venus-500))))
