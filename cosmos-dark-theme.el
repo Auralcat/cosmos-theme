@@ -130,8 +130,8 @@
    `(success ((t (:foreground ,earth-300))))
    `(error ((t (:foreground ,mars-300))))
    `(warning ((t (:foreground ,sun-700))))
-   `(link ((t (:foreground ,uranus-700 :underline t))))
-   `(link-visited ((t (:foreground ,venus-500 :underline t :slant italic))))
+   `(link ((t (:foreground ,uranus-500 :underline t))))
+   `(link-visited ((t (:foreground ,venus-700 :underline t :slant italic))))
    `(region ((t (:background ,uranus-800))))
    `(shadow ((t (:foreground ,space-300))))
    `(highlight ((t (:background ,earth-300 :foreground ,uranus-800))))
@@ -140,7 +140,7 @@
    `(font-lock-builtin-face               ((t (:foreground  ,venus-200 :slant italic))))
    `(font-lock-comment-delimiter-face     ((t (:inherit     (font-lock-comment-face)))))
    `(font-lock-comment-face               ((t (:foreground  ,space-700   :slant italic))))
-   `(font-lock-constant-face              ((t (:foreground  ,sun-400))))
+   `(font-lock-constant-face              ((t (:foreground  ,earth-400))))
    `(font-lock-doc-face                   ((t (:foreground  ,earth-600 :inherit font-lock-comment-face))))
    `(font-lock-function-name-face         ((t (:foreground  ,uranus-300))))
    `(font-lock-keyword-face               ((t (:foreground  ,venus-500))))
@@ -148,7 +148,7 @@
    `(font-lock-regexp-grouping-backslash  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-regexp-grouping-construct  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-string-face                ((t (:foreground  ,sun-600))))
-   `(font-lock-type-face                  ((t (:foreground  ,earth-300 :slant italic))))
+   `(font-lock-type-face                  ((t (:foreground  ,sun-300 :slant italic))))
    `(font-lock-variable-name-face         ((t (:foreground  ,uranus-600  :slant italic))))
    `(font-lock-warning-face               ((t (:foreground  ,mars-600))))
 
@@ -294,6 +294,14 @@
    `(mode-line-emphasis ((t (:foreground ,venus-400))))
    `(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color ,space-900 :style released-button))) (t (:inherit (highlight)))))
    `(mode-line-inactive ((t (:background ,moon-700 :foreground ,space-600 :box nil))))
+
+   ;; Telephone-line
+   `(telephone-line-evil-normal    ((t  (:background  ,mars-900    :inherit  telephone-line-evil))))
+   `(telephone-line-evil-insert    ((t  (:background  ,earth-800   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-visual    ((t  (:background  ,sun-700     :inherit  telephone-line-evil))))
+   `(telephone-line-evil-operator  ((t  (:background  ,uranus-700  :inherit  telephone-line-evil))))
+   `(telephone-line-evil-emacs     ((t  (:background  ,venus-900   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-motion    ((t  (:background  ,uranus-900  :inherit  telephone-line-evil))))
 
    ;; Isearch
    `(isearch ((t (:background ,sun-900 :foreground ,venus-400 ))))
