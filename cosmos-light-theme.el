@@ -261,8 +261,14 @@
    `(web-mode-current-element-highlight-face  ((t  (:foreground  ,venus-800 :background ,earth-100))))
 
    ;; Company-mode
-   `(company-echo-common    ((t  (:foreground  ,mars-900))))
-   `(company-box-selection  ((t  (:background  ,sun-300))))
+   `(company-preview            ((t  (:background  ,uranus-500              :foreground  ,moon-900))))
+   `(company-echo-common        ((t  (:background  ,uranus-500              :foreground  ,moon-200))))
+   `(company-preview-common     ((t  (:inherit     company-echo-common))))
+   `(company-preview-search     ((t  (:foreground  ,space-900))))
+   `(company-box-selection      ((t  (:background  ,sun-300))))
+   `(company-tooltip            ((t  (:background  ,sun-200                 :foreground  ,moon-900))))
+   `(company-tooltip-selection  ((t  (:background  ,venus-400               :foreground  ,moon-900))))
+   `(company-tooltip-common     ((t  (:underline   t))))
 
    ;; Slack client faces
    `(slack-preview-face    ((t  (:background ,sun-100 :inherit org-code))))
