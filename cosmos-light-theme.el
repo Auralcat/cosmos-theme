@@ -261,8 +261,14 @@
    `(web-mode-current-element-highlight-face  ((t  (:foreground  ,venus-800 :background ,earth-100))))
 
    ;; Company-mode
-   `(company-echo-common    ((t  (:foreground  ,mars-900))))
-   `(company-box-selection  ((t  (:background  ,sun-300))))
+   `(company-preview            ((t  (:background  ,uranus-500              :foreground  ,moon-900))))
+   `(company-echo-common        ((t  (:background  ,uranus-500              :foreground  ,moon-200))))
+   `(company-preview-common     ((t  (:inherit     company-echo-common))))
+   `(company-preview-search     ((t  (:foreground  ,space-900))))
+   `(company-box-selection      ((t  (:background  ,sun-300))))
+   `(company-tooltip            ((t  (:background  ,sun-200                 :foreground  ,moon-900))))
+   `(company-tooltip-selection  ((t  (:background  ,venus-400               :foreground  ,moon-900))))
+   `(company-tooltip-common     ((t  (:underline   t))))
 
    ;; Slack client faces
    `(slack-preview-face    ((t  (:background ,sun-100 :inherit org-code))))
@@ -282,6 +288,14 @@
    `(mode-line-emphasis ((t (:foreground ,uranus-400))))
    `(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color "grey40" :style released-button))) (t (:inherit (highlight)))))
    `(mode-line-inactive ((t (:background ,space-300 :foreground ,space-600 :box nil))))
+
+   ;; Telephone-line
+   `(telephone-line-evil-normal    ((t  (:background  ,venus-500   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-insert    ((t  (:background  ,earth-600   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-visual    ((t  (:background  ,sun-600     :inherit  telephone-line-evil))))
+   `(telephone-line-evil-operator  ((t  (:background  ,uranus-500  :inherit  telephone-line-evil))))
+   `(telephone-line-evil-emacs     ((t  (:background  ,mars-700    :inherit  telephone-line-evil))))
+   `(telephone-line-evil-motion    ((t  (:background  ,uranus-700  :inherit  telephone-line-evil))))
 
    ;; Isearch
    `(isearch ((t (:background ,venus-600 :foreground ,uranus-300 ))))
