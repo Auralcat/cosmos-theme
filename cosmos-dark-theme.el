@@ -125,7 +125,7 @@
    `(fixed-pitch ((t (:family "Roboto Mono" :height 140))))
    `(variable-pitch ((t  (:family "Lato" :height 200 :weight light))))
    `(minibuffer-prompt ((t (:foreground ,venus-200))))
-   `(secondary-selection ((t (:background ,uranus-100))))
+   `(secondary-selection ((t (:background ,earth-800))))
    `(trailing-whitespace ((t (:background ,mars-600))))
    `(success ((t (:foreground ,earth-300))))
    `(error ((t (:foreground ,mars-300))))
@@ -139,7 +139,7 @@
    ;; Font-lock mode
    `(font-lock-builtin-face               ((t (:foreground  ,venus-200 :slant italic))))
    `(font-lock-comment-delimiter-face     ((t (:inherit     (font-lock-comment-face)))))
-   `(font-lock-comment-face               ((t (:foreground  ,space-700   :slant italic))))
+   `(font-lock-comment-face               ((t (:foreground  ,space-700 :slant italic))))
    `(font-lock-constant-face              ((t (:foreground  ,earth-400))))
    `(font-lock-doc-face                   ((t (:foreground  ,earth-600 :inherit font-lock-comment-face))))
    `(font-lock-function-name-face         ((t (:foreground  ,uranus-300))))
@@ -196,16 +196,16 @@
    `(org-level-2  ((t  (:inherit outline-2))))
    `(org-level-3  ((t  (:inherit outline-3))))
    `(org-level-4  ((t  (:inherit outline-4))))
-   `(org-document-info-keyword    ((t  (:foreground ,moon-400))))
+   `(org-document-info-keyword    ((t  (:foreground ,moon-500))))
    `(org-block    ((t  (:foreground ,moon-600))))
    `(org-code     ((t  (:foreground ,venus-200))))
    `(org-block     ((nil  (:inherit fixed-pitch :height 120))))
-   `(org-block-begin-line     ((t  (:foreground ,moon-400 :inherit org-block :italic t))))
+   `(org-block-begin-line     ((t  (:foreground ,moon-500 :inherit org-block :italic t))))
    `(org-block-end-line     ((t  (:inherit org-block-begin-line))))
    `(org-date     ((t  (:underline t :foreground ,venus-700 :inherit fixed-pitch))))
    `(org-table    ((t  (:foreground ,uranus-600 :inherit fixed-pitch))))
    `(org-src    ((t  (:inherit fixed-pitch))))
-   `(org-tag    ((t  (:foreground ,uranus-600))))
+   `(org-tag    ((t  (:foreground ,uranus-400))))
 
    ;; Markdown faces
    `(markdown-header-face-1  ((t  (:inherit outline-1))))
@@ -228,8 +228,8 @@
    `(ace-jump-face-foreground ((t (:inherit aw-leading-char-face))))
 
    ;; Todo faces
-   `(org-todo ((t (:box t :bold t :background ,mars-100 :foreground ,mars-500 :family "Poppins" :font-weight 600  :height 160))))
-   `(org-done ((t (:background ,earth-100 :foreground ,earth-500 :inherit org-todo))))
+   `(org-todo ((t (:box t :bold t :background ,mars-500 :foreground ,mars-900 :family "Poppins" :font-weight 600  :height 160))))
+   `(org-done ((t (:background ,earth-500 :foreground ,earth-900 :inherit org-todo))))
 
    ;; Agenda faces
    `(org-agenda-calendar-event  ((t  (:bold t :foreground ,uranus-500))))
