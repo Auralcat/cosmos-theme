@@ -254,12 +254,13 @@
    `(js2-external-variable           ((t  (:foreground  ,earth-500))))
 
    ;; Web-mode
-   `(web-mode-html-tag-face         ((t  (:foreground  ,venus-500))))
+   `(web-mode-html-tag-face         ((t  (:foreground  ,venus-600))))
    `(web-mode-symbol-face           ((t  (:foreground  ,mars-600))))
    `(web-mode-html-attr-name-face   ((t  (:foreground  ,uranus-600))))
    `(web-mode-html-attr-value-face  ((t  (:foreground  ,earth-700))))
    `(web-mode-block-delimiter-face  ((t  (:foreground  ,venus-700))))
    `(web-mode-current-element-highlight-face  ((t  (:foreground  ,venus-800 :background ,earth-100))))
+   `(web-mode-current-column-highlight-face  ((t  (:background  ,uranus-500))))
 
    ;; Company-mode
    `(company-preview            ((t  (:background  ,uranus-500              :foreground  ,moon-900))))
