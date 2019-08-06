@@ -137,19 +137,19 @@
    `(highlight ((t (:background ,earth-300 :foreground ,uranus-800))))
 
    ;; Font-lock mode
-   `(font-lock-builtin-face               ((t (:foreground  ,venus-200 :slant italic))))
+   `(font-lock-builtin-face               ((t (:foreground  ,sun-300 :slant italic))))
    `(font-lock-comment-delimiter-face     ((t (:inherit     (font-lock-comment-face)))))
    `(font-lock-comment-face               ((t (:foreground  ,space-700 :slant italic))))
    `(font-lock-constant-face              ((t (:foreground  ,earth-400))))
    `(font-lock-doc-face                   ((t (:foreground  ,earth-600 :inherit font-lock-comment-face))))
    `(font-lock-function-name-face         ((t (:foreground  ,uranus-300))))
-   `(font-lock-keyword-face               ((t (:foreground  ,venus-500))))
+   `(font-lock-keyword-face               ((t (:foreground  ,mars-400))))
    `(font-lock-preprocessor-face          ((t (:inherit     (font-lock-builtin-face)))))
    `(font-lock-regexp-grouping-backslash  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-regexp-grouping-construct  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-string-face                ((t (:foreground  ,sun-600))))
-   `(font-lock-type-face                  ((t (:foreground  ,sun-300 :slant italic))))
-   `(font-lock-variable-name-face         ((t (:foreground  ,uranus-600  :slant italic))))
+   `(font-lock-type-face                  ((t (:foreground  ,venus-300 :slant italic))))
+   `(font-lock-variable-name-face         ((t (:foreground  ,mars-500  :slant italic))))
    `(font-lock-warning-face               ((t (:foreground  ,mars-600))))
 
    ;; Term colors
@@ -183,7 +183,7 @@
    `(rainbow-delimiters-unmatched-face   ((t  (:foreground  ,venus-800))))
 
    ;; Highlight-numbers-mode
-   `(highlight-numbers-number ((t (:foreground ,earth-500))))
+   `(highlight-numbers-number ((t (:foreground ,sun-400))))
 
    ;; Outline faces
    `(outline-1  ((t  (:foreground ,venus-400 :family  "Poppins" :font-weight 600 :height  220))))
@@ -244,10 +244,10 @@
    `(org-scheduled              ((t  (:foreground  ,venus-500))))
 
    ;; Enh-ruby-mode
-   `(enh-ruby-op-face                ((t  (:foreground  ,earth-600))))
-   `(enh-ruby-regexp-face            ((t  (:foreground  ,sun-700))))
-   `(enh-ruby-regexp-delimiter-face  ((t  (:foreground  ,sun-700))))
-   `(enh-ruby-string-delimiter-face  ((t  (:foreground  ,sun-800))))
+   `(enh-ruby-op-face                ((t  (:foreground  ,uranus-400))))
+   `(enh-ruby-regexp-face            ((t  (:foreground  ,sun-600))))
+   `(enh-ruby-regexp-delimiter-face  ((t  (:foreground  ,sun-600))))
+   `(enh-ruby-string-delimiter-face  ((t  (:foreground  ,sun-700))))
 
    ;; Js2-mode
    `(js2-function-call               ((t  (:foreground  ,uranus-700))))

@@ -137,19 +137,19 @@
    `(highlight ((t (:background ,earth-300 :foreground ,uranus-800))))
 
    ;; Font-lock mode
-   `(font-lock-builtin-face               ((t (:foreground  ,venus-500 :slant italic))))
+   `(font-lock-builtin-face               ((t (:foreground  ,venus-600 :slant italic))))
    `(font-lock-comment-delimiter-face     ((t (:inherit     (font-lock-comment-face)))))
    `(font-lock-comment-face               ((t (:foreground  ,space-500   :slant italic))))
-   `(font-lock-constant-face              ((t (:foreground  ,earth-500))))
+   `(font-lock-constant-face              ((t (:foreground  ,earth-700))))
    `(font-lock-doc-face                   ((t (:foreground  ,earth-600 :inherit font-lock-comment-face))))
-   `(font-lock-function-name-face         ((t (:foreground  ,uranus-500))))
-   `(font-lock-keyword-face               ((t (:foreground  ,mars-600))))
+   `(font-lock-function-name-face         ((t (:foreground  ,uranus-600))))
+   `(font-lock-keyword-face               ((t (:foreground  ,mars-700))))
    `(font-lock-preprocessor-face          ((t (:inherit     (font-lock-builtin-face)))))
    `(font-lock-regexp-grouping-backslash  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-regexp-grouping-construct  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-string-face                ((t (:foreground  ,sun-800))))
-   `(font-lock-type-face                  ((t (:foreground  ,venus-500 :slant italic))))
-   `(font-lock-variable-name-face         ((t (:foreground  ,mars-500  :slant italic))))
+   `(font-lock-type-face                  ((t (:foreground  ,venus-600 :slant italic))))
+   `(font-lock-variable-name-face         ((t (:foreground  ,mars-600  :slant italic))))
    `(font-lock-warning-face               ((t (:foreground  ,mars-600))))
 
    ;; Term colors
@@ -183,7 +183,7 @@
    `(rainbow-delimiters-unmatched-face   ((t  (:foreground  ,venus-800))))
 
    ;; Highlight-numbers-mode
-   `(highlight-numbers-number ((t (:foreground ,earth-500))))
+   `(highlight-numbers-number ((t (:foreground ,uranus-600))))
 
    ;; Outline faces
    `(outline-1  ((t  (:foreground ,venus-400 :family  "Poppins" :font-weight 600 :height  220))))
@@ -255,6 +255,7 @@
 
    ;; Web-mode
    `(web-mode-html-tag-face         ((t  (:foreground  ,venus-500))))
+   `(web-mode-symbol-face           ((t  (:foreground  ,mars-600))))
    `(web-mode-html-attr-name-face   ((t  (:foreground  ,uranus-600))))
    `(web-mode-html-attr-value-face  ((t  (:foreground  ,earth-700))))
    `(web-mode-block-delimiter-face  ((t  (:foreground  ,venus-700))))
