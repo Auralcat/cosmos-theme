@@ -297,10 +297,10 @@
 
    ;; Telephone-line
    `(telephone-line-evil-normal    ((t  (:background  ,mars-900    :inherit  telephone-line-evil))))
-   `(telephone-line-evil-insert    ((t  (:background  ,earth-800   :inherit  telephone-line-evil))))
-   `(telephone-line-evil-visual    ((t  (:background  ,sun-700     :inherit  telephone-line-evil))))
-   `(telephone-line-evil-operator  ((t  (:background  ,uranus-700  :inherit  telephone-line-evil))))
-   `(telephone-line-evil-emacs     ((t  (:background  ,venus-900   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-insert    ((t  (:background  ,earth-900   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-visual    ((t  (:background  ,sun-900     :inherit  telephone-line-evil))))
+   `(telephone-line-evil-operator  ((t  (:background  ,uranus-900  :inherit  telephone-line-evil))))
+   `(telephone-line-evil-emacs     ((t  (:background  ,venus-800   :inherit  telephone-line-evil))))
    `(telephone-line-evil-motion    ((t  (:background  ,uranus-900  :inherit  telephone-line-evil))))
 
    ;; Isearch

@@ -291,10 +291,10 @@
    `(mode-line-inactive ((t (:background ,space-300 :foreground ,space-600 :box nil))))
 
    ;; Telephone-line
-   `(telephone-line-evil-normal    ((t  (:background  ,venus-500   :inherit  telephone-line-evil))))
-   `(telephone-line-evil-insert    ((t  (:background  ,earth-600   :inherit  telephone-line-evil))))
-   `(telephone-line-evil-visual    ((t  (:background  ,sun-600     :inherit  telephone-line-evil))))
-   `(telephone-line-evil-operator  ((t  (:background  ,uranus-500  :inherit  telephone-line-evil))))
+   `(telephone-line-evil-normal    ((t  (:background  ,venus-700   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-insert    ((t  (:background  ,earth-800   :inherit  telephone-line-evil))))
+   `(telephone-line-evil-visual    ((t  (:background  ,sun-800     :inherit  telephone-line-evil))))
+   `(telephone-line-evil-operator  ((t  (:background  ,uranus-600  :inherit  telephone-line-evil))))
    `(telephone-line-evil-emacs     ((t  (:background  ,mars-700    :inherit  telephone-line-evil))))
    `(telephone-line-evil-motion    ((t  (:background  ,uranus-700  :inherit  telephone-line-evil))))
 
