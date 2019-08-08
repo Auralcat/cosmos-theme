@@ -41,6 +41,14 @@
 ;; To load this theme automatically on Emacs startup, add this to your `init.el`:
 ;;     (load-theme 'cosmos t)
 ;;; Code:
+
+;; Set ANSI colors in the terminal inside Emacs.
+(setq ansi-color-names-vector
+      ["#656565" "#dd676b" "#74e24a" "#f1c500" "#159ce4" "#e078d6" "#3db5eb" "#8296a4"])
+
+;; Pass the new color vector to the variable where Emacs takes the term colors from.
+(setq ansi-color-map (ansi-color-make-color-map))
+
 (deftheme cosmos-dark
   "Inspired by the Astro design system")
 
@@ -148,7 +156,7 @@
    `(font-lock-regexp-grouping-backslash  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-regexp-grouping-construct  ((t (:foreground  ,sun-600   :inherit bold))))
    `(font-lock-string-face                ((t (:foreground  ,sun-600))))
-   `(font-lock-type-face                  ((t (:foreground  ,venus-300 :slant italic))))
+   `(font-lock-type-face                  ((t (:foreground  ,venus-200 :slant italic))))
    `(font-lock-variable-name-face         ((t (:foreground  ,mars-500  :slant italic))))
    `(font-lock-warning-face               ((t (:foreground  ,mars-600))))
 
@@ -168,7 +176,7 @@
 
    ;; Linum-mode
    `(line-number ((t (:inherit shadow))))
-   `(line-number-current-line ((t (:foreground ,moon-600 :background "#b8fcac":inherit line-number))))
+   `(line-number-current-line ((t (:foreground ,moon-600 :background ,earth-400 :inherit line-number))))
    `(linum ((t (:inherit line-number))))
 
    ;; Rainbow delimiters

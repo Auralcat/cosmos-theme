@@ -41,6 +41,14 @@
 ;; To load this theme automatically on Emacs startup, add this to your `init.el`:
 ;;     (load-theme 'cosmos t)
 ;;; Code:
+
+;; Set ANSI colors in the terminal inside Emacs.
+(setq ansi-color-names-vector
+      ["#656565" "#ac3c40" "#388833" "#8f7600" "#159ce4" "#c763ba" "#3db5eb" "#8296a4"])
+
+;; Pass the new color vector to the variable where Emacs takes the term colors from.
+(setq ansi-color-map (ansi-color-make-color-map))
+
 (deftheme cosmos-light
   "Inspired by the Astro design system")
 
