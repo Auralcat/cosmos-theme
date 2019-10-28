@@ -130,7 +130,7 @@
    ;; General faces
    `(default ((t (:inherit nil :stipple nil :background ,moon-1000 :foreground ,space-200 :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :height 120 :width normal :foundry "nil"))))
    `(cursor ((t (:background ,venus-300))))
-   `(fixed-pitch ((t (:family "Roboto Mono" :height 140))))
+   `(fixed-pitch ((t (:family "Roboto Mono" :height 140 :foreground ,space-200))))
    `(variable-pitch ((t  (:family "Lato" :height 200 :weight light))))
    `(minibuffer-prompt ((t (:foreground ,venus-200))))
    `(secondary-selection ((t (:background ,earth-800))))
@@ -205,7 +205,7 @@
    `(org-level-3  ((t  (:inherit outline-3))))
    `(org-level-4  ((t  (:inherit outline-4))))
    `(org-document-info-keyword    ((t  (:foreground ,moon-500))))
-   `(org-block    ((t  (:foreground ,moon-600))))
+   `(org-block    ((t  (:foreground ,moon-300))))
    `(org-code     ((t  (:foreground ,venus-200))))
    `(org-block     ((nil  (:inherit fixed-pitch :height 120))))
    `(org-block-begin-line     ((t  (:foreground ,moon-500 :inherit org-block :italic t))))
